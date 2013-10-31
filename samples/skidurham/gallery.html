@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+   <title>Ski Durham - Skiing and Snowboarding Photo Gallery for Durham Region Ski Resorts</title>
+   <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+   <meta name="description" content="The best, one-stop portal for ski resorts in the Durham Region" />
+   <meta name="keywords" content="gallery,images,ski images,ski,skiing,ski durham,snowboard,snowboards,oshawa,pickering,ajax,whitby,ski resorts,ski in durham,trails,ski club,ski lessons,snowboard lessons,skiing gear,snowboard gear,slopes,lakeridge ski,dagmar,beaver valley,oshawa ski,skyloft ski,ski lift,ski season passes,ski deals,chalet,ski classes,snowboard classes,family ski deals,ski packages,snow conditions,weather conditions" />
+   <meta http-equiv="content-language" content="EN" />
+   <meta name="author" content="David Raponi" />
+   <link rel="stylesheet" type="text/css" href="./css/mainStyles.css" />
+   <link rel="stylesheet" href="./css/lightbox.css" type="text/css" media="screen" />
+
+   <script type="text/javascript" src="./js/mainScript.js"></script>
+   <script type="text/javascript" src="./js/adWidget.js"></script>
+   <script type="text/javascript" src="./js/prototype.js"></script>
+   <script type="text/javascript" src="./js/scriptaculous.js?load=effects,builder"></script>
+   <script type="text/javascript" src="./js/lightbox.js"></script>
+
+
+</head>
+
+<body onload="toggleAdWidget(true);">
+  
+<div id="container">
+	
+	<!-- HEADER -->
+	<div id="headerContainer">
+		<div id="headerTop"></div>
+		<div class="shadowWrap">
+			<div id="headerMain">
+				<a id="logo" href="./index.html" title="Home Page"></a>
+				
+				<!-- SEARCH FORM -->
+				<div id="search">
+					<table>
+						<tr>
+							<td><input type="text" id="query" name="query" value="" size="29" onfocus="this.value='';" /></td>
+							<td><input type="image" name="submit" value="" src="./images/searchBTN1.jpg" onmouseover="buttonSwap(this, 'searchBTN2.jpg');" onmouseout="buttonSwap(this, 'searchBTN1.jpg');" /></td>
+						</tr>
+					</table>
+				</div>
+				
+				<!-- LOGIN FORM -->
+				<div id="login">
+					<table>
+						<tr>
+							<td><input type="text" id="email" name="email" value="email" onfocus="this.value='';" /></td>
+							<td><input type="password" id="pass" name="pass" value="password" onfocus="this.value='';" /></td>
+							<td><input type="image" src="./images/loginBTN1.jpg" value="" name="submit" onmouseover="buttonSwap(this, 'loginBTN2.jpg');" onmouseout="buttonSwap(this, 'loginBTN1.jpg');" style="margin-top:0px;" /></td>
+						</tr>
+					</table>
+				</div>
+				
+				<!-- ADVERTISMENT WIDGET -->
+				<div id="adWidget">
+					<div id="widgetBtn" onclick="toggleAdWidget(false);" onmouseover="toggleAdButton(this, 2);" onmouseout="toggleAdButton(this, 1);"></div>
+					<div id="ad"><img id="adImage" src="./images/ad3.jpg" /></div>
+				</div>
+				
+				<!-- BOTTOM GREY BAR -->
+				<div id="bottomBar"></div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- NAVIGATION -->
+	<div id="navContainer">
+		<div class="shadowWrap">
+			<div id="navMain">
+				<a href="./index.html" class="menu" title="Home." style="margin-left:30px;">Home</a>
+				<a href="./index.html" class="menu" title="Check out Durham's ski resorts.">Resorts</a>
+				<a href="./index.html" class="menu" title="Buy and sell ski and snowboard gear.">Marketplace</a>
+				<a href="./index.html" class="menu" title="Organize group trips or sign up for one.">Group Trips</a>
+				<a href="./specials.html" class="menu" title="Check out special deals and purchase lift tickets.">Deals &amp; Passes</a>
+				<a href="./lessons.html" class="menu" title="Sign up for board and ski lessons.">Lessons</a>
+				<a href="./index.html" class="menu" title="Drop us a line.">Contact Us</a>
+				<a href="./index.html" class="menu" style="float:right;margin-right:30px;" tite="Advertise with us on SkiDurham.com.">Advertise!</a>
+			</div>
+		</div>
+	</div>
+	
+	<!-- CONTENT AREA -->
+	<div id="contentContainer">
+		<div class="shadowWrap">
+			<div id="contentMain">
+				<!-- PAGE CONTENT HERE -->
+					<div id="message">
+						<h1>Durham Takes to the Slopes</h1>
+						<p>Durham Region takes to the slopes in one of our greatest snowboard and ski seasons in over 20 years. Nearly every trail was open this year, and the ski hills and resorts have been constantly packed with winter enthusiasts making the most of the amazing riding conditions.</p>
+						<p>The powder has been great and so are these shots. Take a moment to browse the gallery and see your community in action on the slopes.</p><br />
+						<h1>Submit a Photo</h1>
+						<p>Have a good shot of you and your friends boarding? We'd like to show it off.  Submit it below, but please note, we reserve the right to screen for appropriateness.</p>
+						<div style="margin-left:20px;">
+							Your Name:<br />
+							<input type="text" name="name" value="" /><br /><br />
+							Your Email:<br />
+							<input type="text" name="email" value="" /><br /><br />
+							Your File:<br />
+							<input type="file" name="upFile" value="" /><br />
+							<input type="submit" name="submit" value="Upload" /><br />
+						</div>
+					</div>
+					
+					<div class="teaserContent" id="gallery">
+						<div id="pageTitle" style="background-image:url('./images/title_gallery.jpg');"></div>
+						<br />
+						<table>
+						<tr>
+						<td><a href="./photos/photo1.jpg" rel="lightbox[skiDurham]" title="Relaxing"><img src="./photos/t_photo1.jpg" alt="" onmouseover="imgBorder(this,'1px solid #000');" onmouseout="imgBorder(this,'1px solid #aaa');" /></a></td>
+						<td><a href="./photos/photo2.jpg" rel="lightbox[skiDurham]" title="The beauty of fresh powder."><img src="./photos/t_photo2.jpg" alt="" onmouseover="imgBorder(this,'1px solid #000');" onmouseout="imgBorder(this,'1px solid #aaa');" /></a></td>
+						<td><a href="./photos/photo3.jpg" rel="lightbox[skiDurham]" title="Keeping the curves tight."><img src="./photos/t_photo3.jpg" alt="" onmouseover="imgBorder(this,'1px solid #000');" onmouseout="imgBorder(this,'1px solid #aaa');"/></a></td>
+						</tr>
+						<tr>
+						<td><a href="./photos/photo4.jpg" rel="lightbox[skiDurham]" title="Making it look easy."><img src="./photos/t_photo4.jpg" alt="" onmouseover="imgBorder(this,'1px solid #000');" onmouseout="imgBorder(this,'1px solid #aaa');"/></a></td>
+						<td><a href="./photos/photo5.jpg" rel="lightbox[skiDurham]" title="Humble beginnings.  Just wait for Winter Olympics 2030."><img src="./photos/t_photo5.jpg" alt="" onmouseover="imgBorder(this,'1px solid #000');" onmouseout="imgBorder(this,'1px solid #aaa');"/></a></td>
+						<td><a href="./photos/photo6.jpg" rel="lightbox[skiDurham]" title="Not a bad way to spend a weekend."><img src="./photos/t_photo6.jpg" alt="" onmouseover="imgBorder(this,'1px solid #000');" onmouseout="imgBorder(this,'1px solid #aaa');"/></a></td>
+						</tr>
+						<tr>
+						<td><a href="./photos/photo7.jpg" rel="lightbox[skiDurham]" title="A little showing off never hurts."><img src="./photos/t_photo7.jpg" alt="" onmouseover="imgBorder(this,'1px solid #000');" onmouseout="imgBorder(this,'1px solid #aaa');"/></a></td>
+						<td><a href="./photos/photo8.jpg" rel="lightbox[skiDurham]" title="Time to relax (life is hard)."><img src="./photos/t_photo8.jpg" alt="" onmouseover="imgBorder(this,'1px solid #000');" onmouseout="imgBorder(this,'1px solid #aaa');"/></a></td>
+						<td><a href="./photos/photo9.jpg" rel="lightbox[skiDurham]" title="Slopescape."><img src="./photos/t_photo9.jpg" alt="" onmouseover="imgBorder(this,'1px solid #000');" onmouseout="imgBorder(this,'1px solid #aaa');"/></a></td>
+						</tr>
+						<tr>
+						<td><a href="./photos/photo10.jpg" rel="lightbox[skiDurham]" title="Feeling the turn."><img src="./photos/t_photo10.jpg" alt="" onmouseover="imgBorder(this,'1px solid #000');" onmouseout="imgBorder(this,'1px solid #aaa');"/></a></td>
+						<td><a href="./photos/photo11.jpg" rel="lightbox[skiDurham]" title="Hey, you.  Mind watching our gear? Thanks."><img src="./photos/t_photo11.jpg" alt="" onmouseover="imgBorder(this,'1px solid #000');" onmouseout="imgBorder(this,'1px solid #aaa');"/></a></td>
+						<td><a href="./photos/photo12.jpg" rel="lightbox[skiDurham]" title="Family fun in Durham."><img src="./photos/t_photo12.jpg" alt="" onmouseover="imgBorder(this,'1px solid #000');" onmouseout="imgBorder(this,'1px solid #aaa');"/></a></td>
+						</tr>
+						</table>	
+						
+						
+						
+						
+
+					</div>
+				<div id="footerOverlay"></div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- FOOTER -->
+	<div id="footerContainer">
+		<div class="shadowWrap">
+			<div id="footerMain">
+				<a href="#" title="Subscribe to out RSS news feed."><img src="./images/RSS-icon.png" alt="rss"  width="20" /></a>
+				<a href="#" title="Follow us on Facebook."><img src="./images/FaceBook-icon.png" alt="facebook"  width="20"  /></a>
+
+			</div>
+		</div>
+		<div id="footerBtm"></div>
+	</div>
+	
+	<div id="subFooter">
+		&copy; 2010 - Ski Durham - All rights reserved.
+	</div>
+	
+</div>
+
+</body>
+</html>

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>TK Society Supra Kicks </title>
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<meta name="author" content="" />
+		<meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1" />
+		
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<link rel="stylesheet" type="text/css" href="css/clearfix.css" />
+		
+		<script type="text/javascript" src="js/jquery-1.4.2.min.js" ></script>
+		<script type="text/javascript" src="js/functions2.js" ></script>
+		
+		<script type="text/javascript">
+			$(document).ready(function(){
+				//////////////////////////////////////slide color picker
+				$('#picker').slideUp(0);
+				$('#color_link').click(function(){
+						$('#picker').slideDown(400);
+				});
+				
+				$('#picker').mouseleave(function(){
+					$('#picker').slideUp(400);
+				});
+				
+				////////////////////////////wipe screen with black fade
+				function wipe(){
+					var currHeight = $(document).height();
+					var currWidth = $(document).width();
+					$('#wipe').css({'height': currHeight+'px', 'width': currWidth+'px'}).fadeIn(0).fadeOut(300);
+				}
+				
+				///////////////////////////////////change color backgrounds
+				$('#picker img').click(function(){
+					if($(this).hasClass("blue_picker")){
+						wipe();
+						$('body').css('background', 'url("images/blue.jpg") top center no-repeat #9e0b0f');
+					}else if($(this).hasClass("red_picker")){
+						wipe();
+						$('body').css('background', 'url("images/red.jpg") top center no-repeat #491168');
+					}else if($(this).hasClass("black_picker")){						
+						wipe();
+						$('body').css('background', 'url("images/black.jpg") top center no-repeat #03254d');
+					}
+				});
+				
+				/////////////////////////////////////////hide and show title
+				$('#title_link').click(function(){
+					$('#banner img').toggleFade({speedIn : "slow"});
+					$(this).toggleClass("off");
+				});
+				
+				/////////////////////////////////////////hide and show title
+				$('#picker ul li img').hover(function(){
+					$(this).toggleClass("img_off");
+				});
+				
+				
+				/////////////////////////////////////////show content sections
+				$('#logo').click(function(){
+					$('.the_content').hide();
+				});
+				
+				$('#teasers #tech').click(function(){
+					$('.the_content').hide();
+					$('#tech_content').fadeIn(200);
+				
+				});
+				
+				$('#teasers #convo').click(function(){
+					$('.the_content').hide();
+					$('#convo_content').fadeIn(200);
+				
+				});
+				
+				$('#teasers #about').click(function(){
+					$('.the_content').hide();
+					$('#about_content').fadeIn(200);
+				
+				});
+				
+				
+				
+				
+			});
+		</script>
+		
+	</head>
+	<body>
+		<div id="wipe"></div>
+		
+		<div id="wrapper">
+			<div id="header" class="clearfix">
+				<div id="color_picker">
+					<div id="logo">
+						<img src="images/logo.jpg" alt="home"/>
+					</div>
+					
+					<div id="buttons">
+						<h3 id="title_link" >Title</h3>
+						<h3 id="color_link">Color</h3>
+						
+						<div id="picker">
+							<ul>
+								<li><img src="images/blue_picker.jpg" class="blue_picker" /></li>
+								<li><img src="images/red_picker.jpg" class="red_picker" /></li>
+								<li><img src="images/black_picker.jpg" class="black_picker" /></li>
+							</ul>
+						</div>
+						
+					</div>
+				</div>
+				
+				<div id="shop">
+					<a href="http://www.suprafootwear.com/" ><img src="images/shop_btn.jpg" /></a>
+				</div>
+			</div>
+			
+			<div id="content">
+				<div class="the_content" id="tech_content">
+					<div class="title_content">
+						<h3>Style that's made to last. <br />This is suprafoam.</h3>
+					</div>
+					
+					<div class="body_content clearfix">
+						<div class="left_column">
+							<img src="images/tech_image.jpg" />
+						</div>
+						
+						<div class="right_column">
+							<img src="images/suprafoam.jpg" />
+							<ul>
+								<li>+ Ultra lightweight</li>
+								<li>+ Breathable</li>
+								<li>+ Flexible</li>
+								<li>+ Eco friendly</li>
+								<li>+ Does not require harmful adhesives</li>
+								<li>+ Will not lose elasticity under compression</li>
+								<li>+ When molded into midsole, provides unmatched cushioning and comfort</li>
+							</ul>
+						</div>
+					</div>
+					
+				</div>
+				
+				<div class="the_content" id="convo_content">
+					<div class="title_content">
+						<h3>Join the conversation<br /> on twitter and <br /> facebook</h3>
+					</div>
+					
+					<div class="body_content clearfix">
+						<div class="left_column">
+							<div id="twitter_feed">
+								<h2>from twitter</h2>
+								<div class="tweet">
+									<h4>big boi @ SneakerFreak</h4>
+									<p>damn i love the grey ones..going to order them tomz. since i saw them on the inet i dreamed wat its like to wear them :)</p>
+									<p class='time'>1 min 35 secs ago</p>
+								</div>
+								
+								<div class="tweet">
+									<h4>the_ish </h4>
+									<p>Yoo, I checked those new kicks out they are so sexy. I feel guilty even wearing them out though, haha.</p>
+									<p class='time'>2 hours ago</p>
+								</div>
+							</div>
+						</div>
+						
+						<div class="right_column">
+							<div id="blog">
+								<h2>from the blog</h2>
+								<div class="post">
+									<h4>Everyone come out to the supra shoes showcase!</h4>
+									<p><b>Posted on</b> April 15, 2011</p>
+								</div>
+								
+								<div class="post">
+									<h4>New society shoes on sale</h4>
+									<p><b>Posted on</b> April 11, 2011</p>
+								</div>
+								
+								<div class="post">
+									<h4>Ted stopped by to make his mark.</h4>
+									<p><b>Posted on</b> April 06, 2011</p>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				
+				</div>
+				
+				<div class="the_content" id="about_content">
+					<div class="title_content">
+						<h3>double velcro straps.<br />Double the swag.</h3>
+					</div>
+					
+					<div class="body_content clearfix">
+						<div class="left_column">
+							<img src="images/about_image.jpg" />
+						</div>
+						
+						<div class="right_column">
+							<p>
+								High top design with two velcro straps on a vulcanized outsole. Extra heel protection molded into high memory polyurethane insole. Exclusive SUPRAFOAM® midsole providing entire foot impact resistance, optimal shoe flex, and board feel. Internal lace gillies. Neoprene lining and internal neoprene bootie for unmatched comfort, fit and performance.					
+							</p>
+						</div>
+					</div>
+				</div>
+			
+			</div>
+			
+			<div id="banner">
+				<img src="images/banner_text.png" />
+			</div>
+			
+			<div id="teasers" class="clearfix">
+				<div id="tech">
+					<a href="#" >The Technology</a>
+				</div>
+				
+				<div id="convo" class="large">
+					<a href="#" >
+						<ul>
+							<li class="short">Join The</li>
+							<li>Conversation</li>
+						</ul>
+						<img src="images/love.jpg" />
+					</a>
+				</div>
+				
+				<div id="about" class="large">
+					<a href="#" >
+						<ul>
+							<li>About The </li>
+							<li class="short">Shoes</li>
+						</ul>
+						<img src="images/theshoes.jpg" />
+					</a>
+				</div>
+			</div>
+			
+			<div id="footer" class="clearfix">
+				<div id="legal">
+					<p>Copyright &copy; 2011 Supra. All Rights Reserved</p>
+				</div>
+				
+				<div id="footer_links">
+					<a href="" ><img src="images/facebook.png" /></a>
+					<a href="" ><img src="images/youtube.png" /></a>
+					<a href="" ><img src="images/twitter.png" /></a>
+				</div>
+			</div>
+		
+		</div>
+	
+	
+	
+	</body>
+	</html>

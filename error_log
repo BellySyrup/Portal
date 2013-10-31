@@ -1,0 +1,17 @@
+[17-Feb-2012 01:36:15] <ul></ul>
+[17-Feb-2012 01:37:07] <ul></ul>
+[17-Feb-2012 01:37:10] <ul></ul>
+[17-Feb-2012 01:37:23] <ul><li><a href="#20">Testimonials</a></li></ul>
+[17-Feb-2012 01:38:44] <ul><li><a href="#20">Testimonials</a></li><li><a href="#27">Testing 2</a></li><li><a href="#29">testing 3</a></li></ul>
+[17-Feb-2012 01:41:11] <ul></ul>
+[17-Feb-2012 01:41:11] <ul></ul>
+[17-Feb-2012 01:41:11] <ul></ul>
+[17-Feb-2012 01:41:11] <ul></ul>
+[17-Feb-2012 01:41:11] <ul></ul>
+[17-Feb-2012 01:41:11] <ul></ul>
+[17-Feb-2012 01:43:06] <ul><li><a href="#20">Testimonial 1</a></li><li><a href="#27">Testimonial 2</a></li><li><a href="#29">Testimonial 3</a></li></ul>
+[17-Feb-2012 01:43:12] <ul></ul>
+[17-Feb-2012 01:43:17] <ul></ul>
+[17-Feb-2012 01:57:59] PHP Fatal error:  Call to undefined function  has_post_thumbnail() in /home/stephan/public_html/portal/wp-content/plugins/display-posts-shortcode/display-posts-shortcode.php on line 133
+[17-Feb-2012 02:01:51] PHP Fatal error:  Call to undefined function  has_post_thumbnail() in /home/stephan/public_html/portal/wp-content/plugins/display-posts-shortcode/display-posts-shortcode.php on line 133
+[17-Feb-2012 02:03:02] PHP Fatal error:  Call to undefined function  has_post_thumbnail() in /home/stephan/public_html/portal/wp-content/plugins/display-posts-shortcode/display-posts-shortcode.php on line 133

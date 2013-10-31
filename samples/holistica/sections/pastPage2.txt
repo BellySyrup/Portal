@@ -1,0 +1,15 @@
+When we think, our neurons begin firing and the electrical cascade generated produces a measurable electric field.  Using 8 pairs of sensors (16 total), the EPOC performs an extensive EEG (electroencephalogram) effectively caputuring your brain activity in real-time.
+
+But everyone's brain is unique; different neurons fire when different people think "push" or "pull." This means that an initial calibration process is required to have the EPOC software understand the way your neurons fire when you think a particular thought.
+
+Once the calibration is compete, everytime you think "push", the EPOC will recognise that configuration of brain activity as "push" and suddenly the object on the screen is pushed!
+
+This is not necessarily new technology.  In previous work, small computer chips have been implanted onto the brain to detect electrical activity during thought processes, however, this involves surgery making marketability non-existent! The beauty of the EPOC, therefore, is its ability to map electrical activity through the skull and enhance it for later use by the software.
+
+Currently, the EPOC software is capable of detecting three families of thoughts: Emotional, Cognitive, and Expressive.
+
+EMOTIONAL: The levels of concentration/focus, relaxation and pleasure.
+
+COGNITIVE: Physical commands including push, pull, lift, drop, left, right, rotate (clockwise and counterclockwise) as well as the abstract idea of "vanish."
+
+EXPRESSIVE: Facial expressions including blinks, unilateral winks, smiles, grimaces, raised eyebrows and laughs.dfgfdsgsdgsdfggs

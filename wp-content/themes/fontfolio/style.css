@@ -1,0 +1,95 @@
+/*
+Theme Name: FontFolio Theme
+Theme URI: http://www.dessign.net/fontfolio
+Description: FontFolio Theme for WordPress is stylish, customizable, simple, and readable. Perfect for any illustrator or graphic designer.
+Version: 2.0
+Author: Marios Lublinski
+Author URI: http://www.dessign.net
+Tags: 2 column theme, clean, grid based
+
+*/
+
+/* Global */
+* { margin: 0; padding: 0; }
+body { font-size: 12px; font-family: arial, georgia, verdana; color: #666; }
+img { border: none; }
+.left { float: left; }
+.right { float: right; }
+.clear { clear: both; }
+#main_container { width: 1125px; margin: 0 auto; }
+h1,h2,h3,h4,h5,p { margin: 10px 0; }
+a { color: #666; text-decoration: none; }
+a:hover { color:#333; }
+
+/* Header */
+#header_top { position: relative; border-bottom: 1px solid #D4D4D3; }
+.header_top_border { position: absolute; left: 0; top: 0; height: 9px; width: 1125px; background-color: #272725; z-index: 10; }
+#header_top .search { float: right; position: relative; margin-top: 9px;  }
+#header_top .search img { position: absolute; top: 10px; right: 10px; }
+#header_top .search .search_icon { position: absolute; top: 10px; right: 10px; }
+#header_top .search input[type=text] { width: 265px; height: 33px; border: none; border-left: 1px solid #E4E4E2; padding-left: 10px; color: #666; text-decoration: none;}
+
+#header_top .social { float: left; margin-top: 15px; }
+#header_top .social img { float: left; margin: 0 7px; }
+
+#header_top .menu_cont { float: right; position: relative; z-index: 15; margin-right: 15px; }
+#header_top .menu_cont ul { list-style-type: none; }
+#header_top .menu_cont li { float: left; }
+#header_top .menu_cont a { color: #666; text-decoration: none; display: block; padding: 19px 10px 0px; margin: 0 5px; }
+#header_top .menu_cont li.current-menu-item a { border-top: 9px solid #e4e4e2; padding-top: 10px; }
+#header_top .menu_cont a:hover { border-top: 9px solid #e4e4e2; padding-top: 10px; }
+
+#header { padding-top: 30px; }
+.logo { float: left; }
+
+#header_menu { width: 560px; float: right; }
+#header_menu ul { list-style-type: none; }
+#header_menu ul li { float: left; }
+#header_menu ul li a { display: block; color: #666; text-decoration: none; width: 274px; padding: 7px 3px; }
+#header_menu ul li.current-menu-item a { text-decoration: none; color: #000; }
+#header_menu ul li a:hover { text-decoration: none; color: #000; }
+
+
+/* Content */
+
+#content { padding-top: 15px; }
+.big_post_box { width: 562px; float: left; overflow: hidden; }
+.big_post_box h3 { font-size: 13px; padding: 13px 10px; font-weight: normal; margin: 0; background-color: #f9f9f7 }
+.big_post_box h3.gray { background-color: #e4e4e2 !important; }
+.big_post_box img { height: 464px; width: 562px; opacity:1.0; filter:alpha(opacity=100); }
+.big_post_box img:hover { opacity:0.9; filter:alpha(opacity=90); }
+
+.post_box { float: left; width: 281px; height: 253px; overflow: hidden; }
+.post_box img { width: 281px; height: 211px; opacity:1.0; filter:alpha(opacity=100); }
+.post_box img:hover { opacity:0.9; filter:alpha(opacity=90); }
+.post_box h3 { font-size: 13px; padding: 13px 10px; font-weight: normal; margin: 0; background-color: #f3f3f3;  }
+.post_box h3.gray { background-color: #E4E4E2; }
+
+.load_more_cont {  margin-top: 25px; float: left; width: 100%; }
+.load_more_text { width: 190px; background-color: #E4E4E2; padding: 8px 0; }
+
+#single_left { float: left; width: 700px; }
+#single_left h1 { font-size: 14px; padding: 8px 10px; font-weight: normal; background-color: #e4e4e2; margin-top: 0; }
+
+.blog_box { width: 699px; margin-bottom: 25px; }
+.blog_box h3 { font-size: 14px; padding: 8px 10px; font-weight: normal; background-color: #e4e4e2; margin: 0; }
+.blog_box img { width: 699px; height: 209px; }
+
+.navigation { padding: 15px 0; }
+#submit { padding: 5px 10px; background-color: #000; color: #fff; }
+
+/* Sidebar */
+
+#sidebar { float: right; width: 278px; }
+.side_box { margin-bottom: 25px; }
+.side_box ul { list-style-type: none; margin-left: 10px; }
+.side_box ul li { margin-bottom: 5px; }
+.side_box p { padding: 0 10px; }
+.side_box div { padding: 0 10px; }
+
+.side_box h3 { font-size: 14px; padding: 8px 10px; font-weight: normal; background-color: #e4e4e2; margin-top: 0; }
+
+/* Footer */
+
+#footer { padding: 15px 0 25px; margin-top: 10px; border-top: 1px solid #e4e4e2; }
+#footer a:hover { color:#333; }

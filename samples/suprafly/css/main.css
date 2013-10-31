@@ -1,0 +1,391 @@
+/*
+supra microsite -------------
+
+Stylesheet
+
+by Mateen Dar
+on 04/15/2011
+
+Colors----------------------------
+
+
+dark blue bg: #03254d ;
+dark red bg : #9e0b0f;
+dark purple bg : #491168;
+
+
+*/
+
+/*/////////////////////// MAIN STYLES /////////////////////////////////
+////////////////////////////////////////////////////////////////////*/
+
+
+body{
+	background:url('../images/blue.jpg') top center no-repeat #9e0b0f;
+}
+
+#wrapper{
+	margin:0 auto;
+	width:960px;
+}
+
+#banner{
+	text-align:center;
+	width:900px;
+	margin:0 auto;
+	height:400px;
+	margin-top:200px;
+}
+
+
+/*///////////////////////// Header //////////////////////////////////
+////////////////////////////////////////////////////////////////////*/
+
+#header{
+	position:absolute;
+	top:0px;
+	width:960px;
+}
+
+#color_picker{
+	float:left;
+	width:100px;
+	text-align:center;
+}
+
+#color_picker #logo{
+	padding:10px 0px 10px 0px;
+	background:black;
+	cursor:pointer;
+}
+
+#color_picker h3{
+	font-family:Arial, sans-serif;
+	text-transform:uppercase;
+	letter-spacing:2px;
+	font-size:8px;
+	color:white;
+	cursor:pointer;
+	background-color:black;
+	margin:3px 0px 3px 0px;
+	padding:7px 0px 7px 0px;
+	border-radius:3px;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	
+}
+
+#color_picker h3#title_link{
+	border:1px solid black;	
+}
+
+#color_picker h3.off{
+	border:1px solid white !important;
+	background:none;
+}
+
+#color_picker h3#color_link{
+	border:1px solid black;
+	background:url('../images/color_picker_arrow.jpg') 95% center no-repeat #000;
+}
+
+div#wipe{
+	background:#000;
+	position:absolute;
+	z-index:1000;
+	display:none;
+}
+
+#picker{
+	background-color: rgba(100%, 100%, 100%, 0.5);
+	margin:-3px 1px 0px 1px;
+	padding-bottom:5px;
+	border-radius:0px 0px 3px 3px;
+	-webkit-border-radius:0px 0px 3px 3px;
+	-moz-border-radius:0px 0px 3px 3px;
+}
+
+#picker ul li img{
+	cursor:pointer;
+	padding:4px 0px 0px 0px;
+	opacity:0.7;
+}
+
+#picker ul li .img_off{
+	opacity:1 !important;
+}
+
+
+#shop{
+	float:right;
+	width:145px;
+	margin-top:10px;
+}
+
+
+
+/*///////////////////////// teasers //////////////////////////////////
+////////////////////////////////////////////////////////////////////*/
+
+#teasers{
+	width:860px;
+	margin-left:120px;
+	margin-top:60px;
+	margin-bottom:40px;
+}
+
+#teasers div{
+	float:left;
+	margin-right:15px;
+}
+
+#teasers .large{
+	width:279px;
+}
+
+#teasers #tech{
+	width:250px;
+	padding-top:30px;
+}
+
+#teasers #tech a{
+	color:white;
+	font-family:times, serif;
+	text-transform:uppercase;
+	font-style:italic;
+	font-size:30px;
+	text-decoration:none;
+}
+
+#teasers .large a{
+	text-decoration:none;
+}
+
+#teasers .large a ul{
+	position:absolute;
+	margin-top:40px;
+}
+
+
+#teasers .large a li{
+	color:white;
+	font-family:times, serif;
+	text-transform:uppercase;
+	font-style:italic;
+	font-size:22px;
+	background:black;
+	margin-bottom:4px;
+	padding:3px 10px 3px 10px;
+}
+
+#teasers .large li.short{
+	width:105px;
+}
+
+
+/*///////////////////////// content //////////////////////////////////
+////////////////////////////////////////////////////////////////////*/
+
+#content > div{
+	width:840px;
+	position:absolute;
+	margin-left:120px;
+	margin-bottom:40px;
+	margin-top:-135px;
+	display:none;
+}
+
+.the_content .title_content{
+	background:black;
+	padding:40px 0px 40px 20px;
+}
+
+.the_content .title_content h3{
+	font-size:40px;
+	color:white;
+	font-family:times, serif;
+	text-transform:uppercase;
+	font-style:italic;
+	background:black;
+	margin-bottom:4px;
+	padding:3px 0px 3px 10px;	
+}
+
+.the_content .body_content{
+	border:6px solid black;
+	margin-top:10px;
+	background:white;
+}
+
+.the_content .body_content img{
+	margin-bottom:-2px;
+}
+
+
+
+.the_content .body_content .left_column{
+	float:left;
+}
+
+.the_content .body_content .right_column{
+	float:right;
+	width:253px;
+	padding:25px 15px 0px 25px;
+}
+
+.right_column ul{
+	padding-top:20px;
+	padding-left:10px;
+}
+
+.right_column ul li{
+	font-family:Arial, Helvetica, sans-serif;
+	color:#555;
+	font-size:13px;
+	padding-bottom:10px;
+}
+
+/*/////////////////// convo content /////////////////////////////*/
+
+#convo_content h2{
+	background:black;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	display:block;
+	padding:10px;
+	color:white;
+	font-weight:bold;
+	width:120px;
+	font-family:Arial, sans-serif;
+	font-size:14px;
+	
+}
+
+#convo_content .tweet{
+	margin:10px 0px 10px 0px;
+	
+}
+
+#convo_content .tweet h4{
+	font-family:Arial, sans-serif;
+	font-size:14px;
+	font-weight:bold;
+	color:#555;
+	letter-spacing:-1px;
+	padding:10px 0px 10px 0px;
+}
+
+#convo_content .tweet p{
+	font-family:Arial, sans-serif;
+	font-size:12px;
+	color:#444;
+	padding:0px 0px 10px 0px;
+	line-height:1.5em;
+}
+
+#convo_content .tweet p.time{
+	font-size:11px;
+	font-style:italic;
+	color:#666;
+	padding-bottom:10px;
+	border-bottom:1px solid #ccc;
+}
+
+#convo_content .left_column{
+	width:490px;
+	padding:20px;
+}
+
+#convo_content .right_column{
+	padding-top:15px;
+	margin-bottom:20px;
+}
+
+#convo_content #blog{
+	background:#ebebeb;
+	padding:10px 15px 15px 15px;
+}
+
+#convo_content #blog h4{
+	font-family:Arial, sans-serif;
+	font-size:16px;
+	font-weight:bold;
+	color:#333;
+	letter-spacing:-1px;
+	padding:15px 0px 10px 0px;
+}
+
+#convo_content #blog p{
+	font-family:Arial, sans-serif;
+	font-size:12px;
+	color:#444;
+	padding:0px 0px 10px 0px;
+	line-height:1.5em;
+	border-bottom:1px solid #bbb;
+}
+
+/*/////////////////// about content /////////////////////////////*/
+
+
+#about_content p{
+	padding:40px 20px 20px 20px;
+	font-family:Arial, sans-serif;
+	line-height:1.7em;
+	color:#666;
+	font-size:12px;
+}
+
+
+/*///////////////////////// FOOTER //////////////////////////////////
+////////////////////////////////////////////////////////////////////*/
+
+#footer{
+	border-top:1px solid white;
+	border-bottom:1px solid white;
+	padding:8px 0px 8px 0px;
+	width:100%;
+	font-family:sans-serif;
+	font-size:11px;
+	color:white;
+	opacity:0.7;
+	margin-bottom:80px;
+}
+
+#footer a{
+	color:white;
+	padding:0px 0px 0px 0px;
+}
+
+#footer a:hover{
+	text-decoration:none;
+}
+
+#footer #legal{
+	float:left;
+	width:400px;
+	padding-left:10px;
+}
+
+#footer #footer_links{
+	float:right;
+	padding-right:7px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
